@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id='wrapper'>
+            <div id='register'>
+                <h2>Register Here</h2>
+              
+                    <ul class="messages">
+                  
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}></li>
+                   
+                    </ul>
+          
+                <form action="/register" method='POST'>
+                   
+                    Name: <input type='text' name='name'>
+                    Email: <input type='text' name='email'>
+                    Password: <input type='password' name='password'>
+                    <p> passwords should be atleast 8 chracters long</p>
+                    Confirm pw: <input type='password' name='cpassword'>
+                    <input type='submit' value='register'>
+                </form>
+            </div>
+            <div id="log_in">
+                <h2>Log in </h2>
+                <form action='/log_in' method='POST'>
+              
+                    <input type='submit' value='log in'>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id='wrapper'>
+            <div id='header'>
+                <h3></h3>
+                <p>Author: </p>
+                <a href="/dashboard">HOME</a>
+                <a href="logout">log out</a>
+            </div>
+            <div id='reviews'>
+                <h2>Reviews:</h2>
+              
+                <p> <a href="/book/{{rev.book.id}}"></a></p>
+                  <p></p>
+             
+            </div>
+            <div id='all_books' >
+                <h2>Add Review</h2>
+                <form action='review' method='POST'>
+                <textarea cols='50' rows='4'name='review'></textarea>
+                <input type="submit" value='add review'>
+                </form>
+            </div>
+            
+          
+        </div>
+    </body>
+</html>

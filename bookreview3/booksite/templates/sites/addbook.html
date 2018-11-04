@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add Book and Review</title>
+  </head>
+  <body>
+    <h1>Add Book Title and a Review:</h1>
+    <form action="/register" method="POST">
+      
+      <fieldset>
+        <label for="title">Book Title:</label>
+        <input type="text" name="title">
+        <br>
+        Choose from the list: <select name="author_list">
+          <option value="one">Author</option>
+          <option value="two">Author</option>
+          <option value="three">Author</option>
+          <option value="four">Author</option>
+        </select>
+        <br>
+        <label for="author">Or add a new author:</label>
+        <input type="text" name="author">
+        <br>
+        <label for="comment">Review:</label>
+        <textarea name="comment" rows="5" cols="60">
+        </textarea>
+        <br>
+      
+        <br>
+        <button>Add Book and Review</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
